@@ -1,7 +1,7 @@
 # Vue Boilerplate
 
 
-##Project structure
+## Project structure
 ```
 boilerplate/
     node_modules/
