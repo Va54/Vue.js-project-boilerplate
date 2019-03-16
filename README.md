@@ -25,7 +25,7 @@ boilerplate/
         services/
             helpers/ (support files and code)
             store/ (VueX core parts(actions, getters, mutations, state))
-        views/(components that are routed)    
+        views/ (components that are routed)    
         App.vue 
         constants.js
         main.js (host page for Vue app)
