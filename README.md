@@ -13,6 +13,8 @@ boilerplate/
                 /components (styles for separate components)
                 /layout (layout stylesheets e.g. header, footer etc.)
                 /utils (stylesheets for variables, fonts, mixins etc.)
+                shame.scss (your hacky stylesheet)
+                style.scss (main global stylesheet)
         components/ 
             layout/ (layout components e.g. header, footer etc.)
             ui/ (reusable components across the whole app)
