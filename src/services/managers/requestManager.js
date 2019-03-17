@@ -1,5 +1,5 @@
-import axios from "axios";
-import tokenManager from "./tokenManager";
+import axios from 'axios';
+import tokenManager from './tokenManager';
 
 class Request {
   constructor() {
@@ -8,7 +8,7 @@ class Request {
       withCredentials: true,
       headers: {
         Authorization: `JWT ${tokenManager.getAuthToken()}`,
-        "Content-Type": "application/json",
+        'Content-Type': 'application/json',
       },
     });
 
@@ -25,13 +25,13 @@ class Request {
       url: op.url,
       headers: Object.assign({}, op.headers, {
         Authorization: `JWT ${tokenManager.getAuthToken()}`,
-        "Content-Type": "application/json",
+        'Content-Type': 'application/json',
       }),
       params: op.qs,
-      data: data,
+      data,
     })
       .then(res => res.data)
-      .catch(err => {
+      .catch((err) => {
         throw err.response;
       });
   }
@@ -44,10 +44,10 @@ class Request {
       url: op.url,
       headers: Object.assign({}, op.headers, {
         Authorization: `JWT ${tokenManager.getAuthToken()}`,
-        mimeType: "multipart/form-data",
+        mimeType: 'multipart/form-data',
       }),
       params: op.qs,
-      data: data,
+      data,
     }).then(res => res.data);
   }
 
