@@ -32,13 +32,12 @@ module.exports = {
         @import "@/assets/styles/utils/_variables.scss";
         @import "@/assets/styles/utils/_mixins.scss";
         @import "@/assets/styles/utils/_buttons.scss";
-        @import "@/assets/styles/utils/_baseInput.scss";
-        @import "@/assets/styles/utils/_baseCheckbox.scss";
-        @import "@/assets/styles/utils/_baseDropdown.scss";
+        @import "@/assets/styles/base/_baseInput.scss";
+        @import "@/assets/styles/base/_baseCheckbox.scss";
+        @import "@/assets/styles/base/_baseDropdown.scss";
         `,
       },
     },
   },
   lintOnSave: false,
 };
-

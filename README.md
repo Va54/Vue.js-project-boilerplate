@@ -10,21 +10,28 @@ boilerplate/
         assets/
              images
              styles/
+                /base (base components stylesheets e.g. baseInputs, baseDropdowns etc.)
                 /components (styles for separate components)
                 /layout (layout stylesheets e.g. header, footer etc.)
                 /utils (stylesheets for variables, fonts, mixins etc.)
+                /vendors (stylesheets for 3rd party scss(css))
                 shame.scss (your hacky stylesheet)
                 style.scss (main global stylesheet)
         components/ 
-            layout/ (layout components e.g. header, footer etc.)
-            ui/ (reusable components across the whole app)
             common/ (uncategorised components)
+            layout/ (layout components e.g. header, footer etc.)
             sections/
-        mixins/ (Vue component mixins)  
-        router/ (vue-router definition)  
+            ui/ (reusable components across the whole app)
+                /baseComponents (direcotry for base components e.g. baseInput, baseDropdown etc.)
+                /modals (main directory for project modals)
+        config/
+            constansts.js        
         services/
             helpers/ (support files and code)
-            store/ (VueX core parts(actions, getters, mutations, state))
+                /mixins (Vue component mixins)
+                filters (Vue filters e.g. number and date formaters etc.)
+            store/ (VueX core parts(actions, getters, mutations, state, modules))
+            router (vue-router definition)  
         views/ (components that are routed)    
         App.vue 
         constants.js
